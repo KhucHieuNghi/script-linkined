@@ -1,0 +1,22 @@
+{
+    "name": "Sent invitation",
+    "description": "Linkedin Ngô Mỹ Quyên",
+    "version": "1.0",
+    "browser_action": {
+      "default_icon": "./index.png",
+      "default_popup": "./index.html"
+    },
+    "permissions": [
+      "tabs",
+      "cookies",
+      "webRequest",
+      "scripting",
+      "notifications",
+      "activeTab",
+      "browsingData",
+      "<all_urls>"
+    ],
+    "manifest_version": 2
+    }
+
+    
