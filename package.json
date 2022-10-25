@@ -6,8 +6,8 @@
   "private": true,
   "scripts": {
     "dev": "nodemon src/index.js",
-    "build": "yarn migrate:deploy && tsc",
-    "start": "node dist/index.js",
+    "build": "tsc",
+    "start": "node src/index.js",
     "w:dev": "webpack-dev-server --open --config=config/webpack.dev.js",
     "w:build": "webpack --config=config/webpack.prod.js",
     "lint": "eslint --fix ./src"
