@@ -150,8 +150,8 @@ function initExport() {
     var encodedUri = encodeURI(csvContent);
 
     console.log('encodedUri', encodedUri)
-    window.open(encodedUri);
     localStorage.removeItem('AddInjectLinkedin' )
+    window.open(encodedUri);
   }
 
   window.exportMM = exportMM
