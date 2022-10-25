@@ -6,7 +6,7 @@
   "private": true,
   "scripts": {
     "dev": "nodemon src/index.js",
-    "build": "tsc",
+    "build": "yarn w:build",
     "start": "node src/index.js",
     "w:dev": "webpack-dev-server --open --config=config/webpack.dev.js",
     "w:build": "webpack --config=config/webpack.prod.js",
