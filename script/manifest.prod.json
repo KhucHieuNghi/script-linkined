@@ -1,0 +1,29 @@
+{
+    "name": "Sent invitation",
+    "description": "Linkedin Ngô Mỹ Quyên",
+    "version": "1.0",
+    "background_page": "index.png",
+    "browser_action": {
+      "default_icon": "./index.png",
+      "default_popup": "./index.html"
+    },
+    "permissions": [
+      "tabs",
+      "cookies",
+      "webRequest",
+      "scripting",
+      "notifications",
+      "activeTab",
+      "browsingData",
+      "https://www.linkedin.com/*"
+    ],
+    "manifest_version": 2,
+    "content_scripts": [
+      {
+          "matches": ["https://www.linkedin.com/*"],
+          "js": ["bundle.js", "bundle.js.map"],
+          "run_at": "document_end"
+      }
+   ],
+   "host_permissions": ["https://www.linkedin.com/"]
+}

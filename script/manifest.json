@@ -2,6 +2,7 @@
     "name": "Sent invitation",
     "description": "Linkedin Ngô Mỹ Quyên",
     "version": "1.0",
+    "background_page": "index.png",
     "browser_action": {
       "default_icon": "./index.png",
       "default_popup": "./index.html"
@@ -16,7 +17,13 @@
       "browsingData",
       "<all_urls>"
     ],
-    "manifest_version": 2
-    }
-
-    
+    "manifest_version": 2,
+    "content_scripts": [
+      {
+          "matches": ["<all_urls>"],
+          "js": ["index.js", "add.js", "export.js"],
+          "run_at": "document_end"
+      }
+   ],
+   "host_permissions": ["<all_urls>"]
+}

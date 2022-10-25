@@ -1,0 +1,59 @@
+body {
+  font-family: 'Nunito' ,sans-serif;
+  background-color: rgb(255 240 246);
+}
+h1{
+  color: rgb(216 45 139);
+  font-size: 24px;
+  text-align: center;
+}
+img{
+  display: flex;
+  justify-content: center;
+  margin: auto;
+}
+button{
+  margin: 8px 0;
+  font-size: 20px;
+}
+.btn-pri{
+  --tw-text-opacity: 1;
+  color: rgb(255 255 255/var(--tw-text-opacity));
+  font-weight: 700;
+  background-color: rgb(216 45 139);
+  border-radius: 999px;
+  border: none;
+  padding: 8 12px;
+  width: 200px;
+  cursor: pointer;
+}
+.btn-yel{
+  --tw-text-opacity: 1;
+  color: inherit;
+  font-weight: 700;
+  background-color: rgb(252 211 77);
+  border-radius: 999px;
+  border: none;
+  padding: 8 12px;
+  width: 200px;
+  cursor: pointer;
+}
+.btn-second{
+  --tw-text-opacity: 1;
+  color: inherit;
+  font-weight: 700;
+  background-color: rgb(255 240 246/var(--tw-bg-opacity));
+  border-radius: 999px;
+  border: none;
+  padding: 8 12px;
+  width: 200px;
+  cursor: pointer;
+  color: rgb(165 0 100);
+  border: 1px solid rgb(216 45 139)
+}
+.row{
+  margin-top:24px;
+}
+.container-fluid{
+  text-align: center;
+}
